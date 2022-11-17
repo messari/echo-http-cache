@@ -1,4 +1,4 @@
-module github.com/SporkHubr/echo-http-cache
+module github.com/messari/echo-http-cache
 
 go 1.14
 
