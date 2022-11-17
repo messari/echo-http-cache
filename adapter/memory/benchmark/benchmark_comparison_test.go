@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	cache "github.com/SporkHubr/echo-http-cache"
-	"github.com/SporkHubr/echo-http-cache/adapter/memory"
 	"github.com/allegro/bigcache"
+	cache "github.com/messari/echo-http-cache"
+	"github.com/messari/echo-http-cache/adapter/memory"
 )
 
 const maxEntrySize = 256

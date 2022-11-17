@@ -1,5 +1,5 @@
 # echo-http-cache
-[![Build Status](https://travis-ci.org/victorspringer/http-cache.svg?branch=master)](https://travis-ci.org/victorspringer/http-cache) [![Coverage Status](https://coveralls.io/repos/github/victorspringer/http-cache/badge.svg?branch=master)](https://coveralls.io/github/victorspringer/http-cache?branch=master) [![](https://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat)](https://godoc.org/github.com/SporkHubr/echo-http-cache)
+[![Build Status](https://travis-ci.org/victorspringer/http-cache.svg?branch=master)](https://travis-ci.org/victorspringer/http-cache) [![Coverage Status](https://coveralls.io/repos/github/victorspringer/http-cache/badge.svg?branch=master)](https://coveralls.io/github/victorspringer/http-cache?branch=master) [![](https://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat)](https://godoc.org/github.com/messari/echo-http-cache)
 
 This is a high performance Golang HTTP middleware for server-side application layer caching, ideal for REST APIs, using Echo framework.
 
@@ -10,7 +10,7 @@ The memory adapter minimizes GC overhead to near zero and supports some options 
 ## Getting Started
 
 ### Installation (Go Modules)
-`go get github.com/SporkHubr/echo-http-cache`
+`go get github.com/messari/echo-http-cache`
 
 ### Usage
 This is an example of use with the memory adapter:
@@ -24,8 +24,8 @@ import (
     "os"
     "time"
     
-    "github.com/SporkHubr/echo-http-cache"
-    "github.com/SporkHubr/echo-http-cache/adapter/memory"
+    "github.com/messari/echo-http-cache"
+    "github.com/messari/echo-http-cache/adapter/memory"
     "github.com/labstack/echo/v4"
 )
 
@@ -63,8 +63,8 @@ func main() {
 Example of Client initialization with Redis adapter:
 ```go
 import (
-    "github.com/SporkHubr/echo-http-cache"
-    "github.com/SporkHubr/echo-http-cache/adapter/redis"
+    "github.com/messari/echo-http-cache"
+    "github.com/messari/echo-http-cache/adapter/redis"
 )
 
 ...
@@ -127,9 +127,9 @@ echo-http-cache memory adapter takes way less GC pause time, that means smaller 
 - Develop MongoDB adapter
 
 ## Godoc Reference
-- [echo-http-cache](https://pkg.go.dev/github.com/SporkHubr/echo-http-cache)
-- [Memory adapter](https://pkg.go.dev/github.com/SporkHubr/echo-http-cache/adapter/memory)
-- [Redis adapter](https://pkg.go.dev/github.com/SporkHubr/echo-http-cache/adapter/redis)
+- [echo-http-cache](https://pkg.go.dev/github.com/messari/echo-http-cache)
+- [Memory adapter](https://pkg.go.dev/github.com/messari/echo-http-cache/adapter/memory)
+- [Redis adapter](https://pkg.go.dev/github.com/messari/echo-http-cache/adapter/redis)
 
 ## License
-echo-http-cache is released under the [MIT License](https://github.com/SporkHubr/echo-http-cache/blob/master/LICENSE).
+echo-http-cache is released under the [MIT License](https://github.com/messari/echo-http-cache/blob/master/LICENSE).
